@@ -3,14 +3,13 @@
 EAPI=8
 
 MY_PN=${PN/-bin/}
-MY_P=${MY_PN}-${PV/_/-}
-MY_PV=$(ver_cut 1-2)
+MY_P=${MY_PN}-${PV}
 
 DESCRIPTION="Dart SDK"
 HOMEPAGE="https://dart.dev/"
 LICENSE="BSD-3"
 
-BASE_SRC_URI="https://storage.googleapis.com/dart-archive/channels/stable/release/${MY_PV}/sdk"
+BASE_SRC_URI="https://storage.googleapis.com/dart-archive/channels/stable/release/${PV}/sdk"
 SRC_URI="
 	x86? ( ${BASE_SRC_URI}/dartsdk-linux-ia32-release.zip )
 	amd64? ( ${BASE_SRC_URI}/dartsdk-linux-x64-release.zip )
