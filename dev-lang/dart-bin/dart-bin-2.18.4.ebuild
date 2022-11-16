@@ -11,10 +11,10 @@ LICENSE="BSD-3"
 
 BASE_SRC_URI="https://storage.googleapis.com/dart-archive/channels/stable/release/${PV}/sdk"
 SRC_URI="
-	x86? ( ${BASE_SRC_URI}/dartsdk-linux-ia32-release.zip )
-	amd64? ( ${BASE_SRC_URI}/dartsdk-linux-x64-release.zip )
-	arm? ( ${BASE_SRC_URI}/dartsdk-linux-arm-release.zip )
-	arm64? ( ${BASE_SRC_URI}/dartsdk-linux-arm64-release.zip )
+	x86? ( ${BASE_SRC_URI}/dartsdk-linux-ia32-release.zip -> ${MY_P}-linux-ia32.zip )
+	amd64? ( ${BASE_SRC_URI}/dartsdk-linux-x64-release.zip -> ${MY_P}-linux-x64.zip )
+	arm? ( ${BASE_SRC_URI}/dartsdk-linux-arm-release.zip -> ${MY_P}-linux-arm.zip )
+	arm64? ( ${BASE_SRC_URI}/dartsdk-linux-arm64-release.zip -> ${MY_P}-linux-arm64.zip )
 "
 
 SLOT="0"
