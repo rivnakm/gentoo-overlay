@@ -1,4 +1,4 @@
-# Copyright 2022 Michael Rivnak
+ # Copyright 2022 Michael Rivnak
 
 EAPI=8
 
@@ -31,6 +31,10 @@ src_install() {
 	insinto "/usr/$(get_libdir)/${MY_P}/"
 	doins -r ./include
 	doins -r ./lib
+	doins -r ./bin
+	doins ./dartdoc_options.yaml
+	doins ./revision
+	doins ./version
 
 	exeinto "/usr/$(get_libdir)/${MY_P}/bin"
     for bin in dart dartaotruntime;
