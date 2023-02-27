@@ -64,21 +64,22 @@ pkg_setup() {
 }
 
 src_install() {
-	newicon resources/app/resources/linux/code.png visual-studio-code.png
-	newicon -s 512 resources/app/resources/linux/code.png visual-studio-code.png
+	newicon resources/app/resources/linux/code.png ${PN}.png
+	newicon -s 512 resources/app/resources/linux/code.png ${PN}.png
 	domenu "${FILESDIR}"/{code,code-url-handler}.desktop
 
-	insinto /opt/visual-studio-code
+	insinto /opt/${PN}
 	doins -r .
-	fperms +x /opt/visual-studio-code/{code,bin/code} \
-		/opt/visual-studio-code/resources/app/extensions/git/dist/{askpass.sh,askpass-empty.sh} \
-		/opt/visual-studio-code/resources/app/node_modules.asar.unpacked/@vscode/ripgrep/bin/rg \
-		/opt/visual-studio-code/resources/app/node_modules.asar.unpacked/node-pty/build/Release/spawn-helper
+	fperms +x /opt/${PN}/{code,bin/code} \
+		/opt/${PN}/chrome_crashpad_handler
+		/opt/${PN}/resources/app/extensions/git/dist/{askpass.sh,askpass-empty.sh} \
+		/opt/${PN}/resources/app/node_modules.asar.unpacked/@vscode/ripgrep/bin/rg \
+		/opt/${PN}/resources/app/node_modules.asar.unpacked/node-pty/build/Release/spawn-helper
 	dodir /opt/bin
-	dosym /opt/visual-studio-code/bin/code /usr/bin/code
+	dosym /opt/${PN}/bin/code /usr/bin/code
 
 	insinto /usr/share/metainfo
 	doins "${FILESDIR}"/code.appdata.xml
 
-	pax-mark -m "${ED}"/opt/visual-studio-code/code
+	pax-mark -m "${ED}"/opt/${PN}/code
 }
