@@ -71,7 +71,7 @@ src_install() {
 	insinto /opt/${PN}
 	doins -r .
 	fperms +x /opt/${PN}/{code,bin/code} \
-		/opt/${PN}/chrome_crashpad_handler
+		/opt/${PN}/chrome_crashpad_handler \
 		/opt/${PN}/resources/app/extensions/git/dist/{askpass.sh,askpass-empty.sh} \
 		/opt/${PN}/resources/app/node_modules.asar.unpacked/@vscode/ripgrep/bin/rg \
 		/opt/${PN}/resources/app/node_modules.asar.unpacked/node-pty/build/Release/spawn-helper
