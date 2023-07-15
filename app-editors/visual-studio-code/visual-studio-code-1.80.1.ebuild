@@ -73,8 +73,7 @@ src_install() {
 	fperms +x /opt/${PN}/{code,bin/code} \
 		/opt/${PN}/chrome_crashpad_handler \
 		/opt/${PN}/resources/app/extensions/git/dist/{askpass.sh,askpass-empty.sh} \
-		/opt/${PN}/resources/app/node_modules.asar.unpacked/@vscode/ripgrep/bin/rg \
-		/opt/${PN}/resources/app/node_modules.asar.unpacked/node-pty/build/Release/spawn-helper
+		/opt/${PN}/resources/app/node_modules.asar.unpacked/@vscode/ripgrep/bin/rg
 	dodir /opt/bin
 	dosym /opt/${PN}/bin/code /usr/bin/code
 
