@@ -8,13 +8,13 @@ CRATES="
     bitflags@1.3.2
     bitflags@2.4.2
     block@0.1.6
-    bstr@1.9.0
-    bumpalo@3.14.0
+    bstr@1.9.1
+    bumpalo@3.15.4
     byteorder@1.5.0
-    cc@1.0.83
+    cc@1.0.90
     cfg-if@0.1.10
     cfg-if@1.0.0
-    chrono@0.4.33
+    chrono@0.4.35
     cocoa@0.20.2
     core-foundation@0.7.0
     core-foundation@0.9.4
@@ -30,7 +30,7 @@ CRATES="
     dirs@5.0.1
     dlib@0.5.2
     dotenvy@0.15.7
-    either@1.9.0
+    either@1.10.0
     enum-as-inner@0.6.0
     errno@0.3.8
     foreign-types@0.3.2
@@ -52,32 +52,32 @@ CRATES="
     globset@0.4.14
     glob@0.3.1
     heck@0.4.1
-    hermit-abi@0.3.5
+    hermit-abi@0.3.9
     home@0.5.9
     iana-time-zone@0.1.60
     iana-time-zone-haiku@0.1.2
     if-addrs@0.10.2
     itertools@0.11.0
-    js-sys@0.3.67
+    js-sys@0.3.69
     lazy_static@1.4.0
     libc@0.2.153
-    libloading@0.8.1
+    libloading@0.8.3
     libmacchina@7.2.1
     libredox@0.0.1
     linux-raw-sys@0.4.13
     local-ip-address@0.5.7
     lock_api@0.4.11
-    log@0.4.20
+    log@0.4.21
     mach2@0.4.2
     malloc_buf@0.0.6
     memchr@2.7.1
     memoffset@0.7.1
     metal@0.18.0
-    mio@0.8.10
+    mio@0.8.11
     neli@0.6.4
     neli-proc-macros@0.1.3
     nix@0.26.4
-    num-traits@0.2.17
+    num-traits@0.2.18
     num_cpus@1.16.0
     objc@0.2.7
     objc_exception@0.1.2
@@ -89,20 +89,20 @@ CRATES="
     pciid-parser@0.6.3
     pin-project-lite@0.2.13
     pin-utils@0.1.0
-    pkg-config@0.3.29
+    pkg-config@0.3.30
     proc-macro2@1.0.78
     quote@1.0.35
     redox_syscall@0.4.1
     redox_users@0.4.4
-    regex-automata@0.4.5
+    regex-automata@0.4.6
     regex-syntax@0.8.2
     regex@1.10.3
     rpm-pkg-count@0.2.1
     rustix@0.38.31
     same-file@1.0.6
     scopeguard@1.2.0
-    serde@1.0.196
-    serde_derive@1.0.196
+    serde@1.0.197
+    serde_derive@1.0.197
     signal-hook-mio@0.2.3
     signal-hook-registry@1.4.1
     signal-hook@0.3.17
@@ -112,21 +112,21 @@ CRATES="
     sqlite3-sys@0.15.2
     sqlite@0.31.1
     syn@1.0.109
-    syn@2.0.48
+    syn@2.0.52
     sysctl@0.5.5
-    thiserror-impl@1.0.56
-    thiserror@1.0.56
+    thiserror-impl@1.0.57
+    thiserror@1.0.57
     tracing-attributes@0.1.27
     tracing-core@0.1.32
     tracing@0.1.40
     unicode-ident@1.0.12
-    walkdir@2.4.0
+    walkdir@2.5.0
     wasi@0.11.0+wasi-snapshot-preview1
-    wasm-bindgen@0.2.90
-    wasm-bindgen-backend@0.2.90
-    wasm-bindgen-macro@0.2.90
-    wasm-bindgen-macro-support@0.2.90
-    wasm-bindgen-shared@0.2.90
+    wasm-bindgen@0.2.92
+    wasm-bindgen-backend@0.2.92
+    wasm-bindgen-macro@0.2.92
+    wasm-bindgen-macro-support@0.2.92
+    wasm-bindgen-shared@0.2.92
     wayland-sys@0.31.1
     which@4.4.2
     winapi@0.3.9
@@ -136,26 +136,26 @@ CRATES="
     winapi-x86_64-pc-windows-gnu@0.4.0
     windows-core@0.52.0
     windows-targets@0.48.5
-    windows-targets@0.52.0
+    windows-targets@0.52.4
     windows_aarch64_gnullvm@0.48.5
-    windows_aarch64_gnullvm@0.52.0
+    windows_aarch64_gnullvm@0.52.4
     windows_aarch64_msvc@0.39.0
     windows_aarch64_msvc@0.48.5
-    windows_aarch64_msvc@0.52.0
+    windows_aarch64_msvc@0.52.4
     windows_i686_gnu@0.39.0
     windows_i686_gnu@0.48.5
-    windows_i686_gnu@0.52.0
+    windows_i686_gnu@0.52.4
     windows_i686_msvc@0.39.0
     windows_i686_msvc@0.48.5
-    windows_i686_msvc@0.52.0
+    windows_i686_msvc@0.52.4
     windows_x86_64_gnu@0.39.0
     windows_x86_64_gnu@0.48.5
-    windows_x86_64_gnu@0.52.0
+    windows_x86_64_gnu@0.52.4
     windows_x86_64_gnullvm@0.48.5
-    windows_x86_64_gnullvm@0.52.0
+    windows_x86_64_gnullvm@0.52.4
     windows_x86_64_msvc@0.39.0
     windows_x86_64_msvc@0.48.5
-    windows_x86_64_msvc@0.52.0
+    windows_x86_64_msvc@0.52.4
     windows@0.39.0
     windows@0.48.0
     windows-implement@0.48.0
