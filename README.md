@@ -4,17 +4,20 @@ Custom Gentoo ebuild repository
 
 ## Packages
 
-- app-editors
-  - visual-studio-code
-- dev-lang
-  - dart-bin
-  - gnucobol
+- app-misc
+  - pfetch-rs
+- dev-python
+  - yaspin
+- dev-util
+  - hyprwayland-scanner
+- gui-apps
+  - hyprshade
 - kde-plasma
   - catppuccin-konsole-theme
   - catppuccin-mocha-colorscheme
 - media-fonts
   - cascadia-mono-nerd-font
-- net-im
-  - betterdiscordctl
+- media-gfx
+  - hyprshot
 - sys-power
   - power-profiles-daemon
