@@ -1,13 +1,12 @@
-# Copyright 1999-2022 Gentoo Authors
-# Distributed under the terms of the GNU General Public License v2
+# Copyright 2023-2024 Mike Rivnak
 
 EAPI=8
 
 inherit meson systemd
 
 DESCRIPTION="Makes power profiles handling available over D-Bus."
-HOMEPAGE="https://gitlab.freedesktop.org/hadess/power-profiles-daemon"
-SRC_URI="https://gitlab.freedesktop.org/hadess/${PN}/-/archive/${PV}/${PN}-${PV}.tar.gz"
+HOMEPAGE="https://gitlab.freedesktop.org/upower/power-profiles-daemon"
+SRC_URI="https://gitlab.freedesktop.org/upower/${PN}/-/archive/${PV}/${PN}-${PV}.tar.gz"
 
 LICENSE="GPL-3+"
 SLOT="0"
@@ -15,13 +14,17 @@ IUSE="doc"
 
 KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~riscv ~x86"
 
-BDEPEND=">=dev-libs/libgudev-234
+BDEPEND="
+    doc? ( dev-python/argparse-manpage )
+"
+
+DEPEND="
+    >=dev-libs/libgudev-234
     dev-python/python-dbusmock
     dev-util/umockdev
     >=sys-auth/polkit-0.114
     sys-power/upower
 "
-DEPEND="${BDEPEND}"
 
 src_configure() {
     local emesonargs=(
