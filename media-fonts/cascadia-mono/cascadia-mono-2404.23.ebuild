@@ -9,7 +9,7 @@ HOMEPAGE="https://github.com/microsoft/cascadia-code"
 SRC_URI="https://github.com/microsoft/cascadia-code/releases/download/v${PV}/CascadiaCode-${PV}.zip -> ${P}.zip"
 
 SLOT=0
-LICENSE="Apache-2.0 MIT OFL-1.1"
+LICENSE="OFL-1.1"
 KEYWORDS="~amd64 ~arm ~arm64 ~riscv"
 IUSE="nerd-fonts powerline"
 
