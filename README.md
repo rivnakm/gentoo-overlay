@@ -6,17 +6,19 @@ Custom Gentoo ebuild repository
 
 - app-misc
   - pfetch-rs
+  - rotz
 - dev-python
   - yaspin
 - dev-util
   - hyprwayland-scanner
 - gui-apps
   - hyprshade
+  - wttrbar
 - kde-plasma
   - catppuccin-konsole-theme
   - catppuccin-mocha-colorscheme
 - media-fonts
-  - cascadia-mono-nerd-font
+  - cascadia-mono
 - media-gfx
   - hyprshot
 - sys-power
