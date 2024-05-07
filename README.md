@@ -13,7 +13,6 @@ Custom Gentoo ebuild repository
   - hyprwayland-scanner
 - gui-apps
   - hyprshade
-  - wttrbar
 - kde-plasma
   - catppuccin-konsole-theme
   - catppuccin-mocha-colorscheme
