@@ -6,7 +6,7 @@ Custom Gentoo ebuild repository
 
 - app-misc
   - pfetch-rs
-  - rotz
+  - spaceconf
 - dev-python
   - yaspin
 - dev-util
