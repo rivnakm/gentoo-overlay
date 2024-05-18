@@ -9,8 +9,6 @@ Custom Gentoo ebuild repository
   - spaceconf
 - dev-python
   - yaspin
-- dev-util
-  - hyprwayland-scanner
 - gui-apps
   - hyprshade
 - kde-plasma
