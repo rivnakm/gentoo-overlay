@@ -37,6 +37,8 @@ CRATES="
     dirs@5.0.1
     dirs-sys@0.3.7
     dirs-sys@0.4.1
+    env_filter@0.1.0
+    env_logger@0.11.3
     errno@0.3.9
     fastrand@2.1.0
     generic-array@0.14.7
@@ -47,6 +49,7 @@ CRATES="
     hermit-abi@0.3.9
     hostname@0.4.0
     humansize@2.1.3
+    humantime@2.1.0
     iana-time-zone@0.1.60
     iana-time-zone-haiku@0.1.2
     ignore@0.4.22
