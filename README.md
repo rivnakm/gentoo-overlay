@@ -7,8 +7,6 @@ Custom Gentoo ebuild repository
 - app-misc
   - pfetch-rs
   - spaceconf
-- dev-lang
-  - ocaml
 - dev-python
   - yaspin
 - gui-apps
