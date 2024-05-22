@@ -596,7 +596,7 @@ DEPEND="
 "
 RDEPEND="
 	${DEPEND}
-	|| ( sys-kernel/rog-sources sys-kernel/rog-zen-sources )
+	|| ( sys-kernel/rog-sources sys-kernel/zen_rog-sources )
 "
 BDEPEND="
 	dev-build/cmake
