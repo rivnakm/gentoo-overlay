@@ -619,7 +619,7 @@ src_configure() {
 		--bin asusctl \
 		--bin asusd \
 		--bin asusd-user \
-		$(usex control-center --bin "" rog-control-center "")
+		$(usev control-center --bin) $(usev control-center rog-control-center)
 }
 
 src_install() {
