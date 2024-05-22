@@ -9,7 +9,6 @@ K_SECURITY_UNSUPPORTED="1"
 K_NOSETEXTRAVERSION="1"
 
 inherit kernel-2 unpacker
-detect_version
 detect_arch
 
 DESCRIPTION="The Zen Kernel Live Sources with patches for ASUS ROG laptops"
@@ -33,14 +32,14 @@ UNIPATCH_LIST="
 	${FILESDIR}/07-ally-mcu-powersave.patch
 	${FILESDIR}/08-mcu-powersave.patch
 	${FILESDIR}/09-cleanup-main-struct.patch
+	${FILESDIR}/10-extraversion.patch
 "
 UNIPATCH_STRICTORDER="yes"
 
-K_EXTRAEINFO="For more info on zen-sources, and for how to report problems, see: \
-${HOMEPAGE}, also go to #zen-sources on oftc"
 
 src_unpack() {
 	unpacker "linux-v${PV}-zen1.patch.zst"
+
 	kernel-2_src_unpack
 }
 

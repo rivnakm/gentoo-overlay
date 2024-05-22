@@ -32,7 +32,7 @@ Custom Gentoo ebuild repository
 - sys-kernel
   - rog-sources
     - 6.9.1
-  - rog-zen-sources
+  - zen_rog-sources
     - 6.8.9
 - sys-power
   - power-profiles-daemon
