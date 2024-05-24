@@ -6,7 +6,7 @@ Custom Gentoo ebuild repository
 
 - app-laptop
   - asusctl
-    - 6.0.9
+    - 6.0.10
 - app-misc
   - pfetch-rs
     - 2.9.1

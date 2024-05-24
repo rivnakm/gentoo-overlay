@@ -17,13 +17,13 @@ CRATES="
 	android-properties@0.2.2
 	android-tzdata@0.1.1
 	android_system_properties@0.1.5
-	anyhow@1.0.85
+	anyhow@1.0.86
 	arrayref@0.3.7
 	arrayvec@0.7.4
 	as-raw-xcb-connection@1.0.1
 	async-broadcast@0.7.0
 	async-channel@1.9.0
-	async-channel@2.3.0
+	async-channel@2.3.1
 	async-executor@1.11.0
 	async-fs@1.6.0
 	async-fs@2.1.2
@@ -61,14 +61,14 @@ CRATES="
 	blocking@1.6.0
 	bumpalo@3.16.0
 	by_address@1.2.1
-	bytemuck@1.15.0
+	bytemuck@1.16.0
 	bytemuck_derive@1.6.0
 	byteorder@1.5.0
 	bytes@1.6.0
 	calloop@0.12.4
 	calloop-wayland-source@0.2.0
 	cargo-husky@1.5.0
-	cc@1.0.97
+	cc@1.0.98
 	cesu8@1.1.0
 	cexpr@0.6.0
 	cfg-if@1.0.0
@@ -100,10 +100,10 @@ CRATES="
 	cpufeatures@0.2.12
 	crc32fast@1.4.0
 	critical-section@1.1.2
-	crossbeam-channel@0.5.12
+	crossbeam-channel@0.5.13
 	crossbeam-deque@0.8.5
 	crossbeam-epoch@0.9.18
-	crossbeam-utils@0.8.19
+	crossbeam-utils@0.8.20
 	crunchy@0.2.2
 	crypto-common@0.1.6
 	css-color-parser2@1.0.1
@@ -126,7 +126,7 @@ CRATES="
 	drm-fourcc@2.2.0
 	drm-sys@0.4.0
 	dwrote@0.11.0
-	either@1.11.0
+	either@1.12.0
 	endi@1.1.0
 	enumflags2@0.7.9
 	enumflags2_derive@0.7.9
@@ -218,7 +218,7 @@ CRATES="
 	inotify-sys@0.1.5
 	input@0.8.3
 	input-sys@1.18.0
-	instant@0.1.12
+	instant@0.1.13
 	integer-sqrt@0.1.5
 	io-lifetimes@1.0.11
 	is-terminal@0.4.12
@@ -235,7 +235,7 @@ CRATES="
 	lazy_static@1.4.0
 	lazycell@1.3.0
 	lebe@0.5.2
-	libc@0.2.154
+	libc@0.2.155
 	libloading@0.7.4
 	libloading@0.8.3
 	libm@0.2.8
@@ -248,7 +248,7 @@ CRATES="
 	linked-hash-map@0.5.6
 	linked_hash_set@0.1.4
 	linux-raw-sys@0.3.8
-	linux-raw-sys@0.4.13
+	linux-raw-sys@0.4.14
 	locale_config@0.3.0
 	lock_api@0.4.12
 	log@0.4.21
@@ -257,7 +257,7 @@ CRATES="
 	lyon_algorithms@1.0.4
 	lyon_extra@1.0.2
 	lyon_geom@1.0.5
-	lyon_path@1.0.4
+	lyon_path@1.0.5
 	mac-notification-sys@0.5.9
 	malloc_buf@0.0.6
 	matchers@0.1.0
@@ -271,7 +271,7 @@ CRATES="
 	mime@0.3.17
 	minimal-lexical@0.2.1
 	miniz_oxide@0.4.4
-	miniz_oxide@0.7.2
+	miniz_oxide@0.7.3
 	mio@0.8.11
 	nanorand@0.7.0
 	ndk@0.8.0
@@ -323,7 +323,7 @@ CRATES="
 	ppv-lite86@0.2.17
 	prettyplease@0.2.20
 	proc-macro-crate@3.1.0
-	proc-macro2@1.0.82
+	proc-macro2@1.0.83
 	prost@0.12.6
 	prost-derive@0.12.6
 	prost-types@0.12.6
@@ -335,7 +335,7 @@ CRATES="
 	rand_chacha@0.3.1
 	rand_core@0.6.4
 	raw-window-handle@0.5.2
-	raw-window-handle@0.6.1
+	raw-window-handle@0.6.2
 	rayon@1.10.0
 	rayon-core@1.12.1
 	redox_syscall@0.3.5
@@ -358,7 +358,7 @@ CRATES="
 	rustc_version@0.4.0
 	rustix@0.37.27
 	rustix@0.38.34
-	rustversion@1.0.16
+	rustversion@1.0.17
 	rustybuzz@0.13.0
 	ryu@1.0.18
 	same-file@1.0.6
@@ -369,11 +369,11 @@ CRATES="
 	sdl2@0.36.0
 	sdl2-sys@0.36.0
 	semver@1.0.23
-	serde@1.0.201
-	serde_derive@1.0.201
+	serde@1.0.202
+	serde_derive@1.0.202
 	serde_json@1.0.117
 	serde_repr@0.1.19
-	serde_spanned@0.6.5
+	serde_spanned@0.6.6
 	sha1@0.10.6
 	sharded-slab@0.1.7
 	shlex@1.3.0
@@ -389,7 +389,7 @@ CRATES="
 	smithay-client-toolkit@0.18.1
 	smithay-clipboard@0.7.1
 	smol@1.3.0
-	smol_str@0.2.1
+	smol_str@0.2.2
 	socket2@0.4.10
 	socket2@0.5.7
 	softbuffer@0.3.4
@@ -402,7 +402,7 @@ CRATES="
 	strum_macros@0.26.2
 	svgtypes@0.15.1
 	syn@1.0.109
-	syn@2.0.63
+	syn@2.0.65
 	sync_wrapper@0.1.2
 	tar@0.4.40
 	tauri-winrt-notification@0.1.3
@@ -410,8 +410,8 @@ CRATES="
 	tempfile@3.10.1
 	termcolor@1.4.1
 	text-size@1.1.1
-	thiserror@1.0.60
-	thiserror-impl@1.0.60
+	thiserror@1.0.61
+	thiserror-impl@1.0.61
 	thread_local@1.1.8
 	tiff@0.9.1
 	time@0.3.36
@@ -426,10 +426,10 @@ CRATES="
 	tokio-macros@2.2.0
 	tokio-stream@0.1.15
 	tokio-util@0.7.11
-	toml@0.8.12
-	toml_datetime@0.6.5
+	toml@0.8.13
+	toml_datetime@0.6.6
 	toml_edit@0.21.1
-	toml_edit@0.22.12
+	toml_edit@0.22.13
 	tonic@0.10.2
 	tower@0.4.13
 	tower-layer@0.3.2
