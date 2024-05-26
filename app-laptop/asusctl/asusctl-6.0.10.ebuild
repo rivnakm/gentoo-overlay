@@ -98,7 +98,7 @@ CRATES="
 	core-text@20.1.0
 	countme@3.0.1
 	cpufeatures@0.2.12
-	crc32fast@1.4.0
+	crc32fast@1.4.2
 	critical-section@1.1.2
 	crossbeam-channel@0.5.13
 	crossbeam-deque@0.8.5
@@ -133,7 +133,7 @@ CRATES="
 	env_logger@0.10.2
 	equivalent@1.0.1
 	errno@0.3.9
-	euclid@0.22.9
+	euclid@0.22.10
 	event-listener@2.5.3
 	event-listener@3.1.0
 	event-listener@4.0.3
@@ -258,7 +258,7 @@ CRATES="
 	lyon_extra@1.0.2
 	lyon_geom@1.0.5
 	lyon_path@1.0.5
-	mac-notification-sys@0.5.9
+	mac-notification-sys@0.6.1
 	malloc_buf@0.0.6
 	matchers@0.1.0
 	matchit@0.7.3
@@ -281,6 +281,7 @@ CRATES="
 	nix@0.27.1
 	nix@0.28.0
 	nom@7.1.3
+	notify-rust@4.11.0
 	num-conv@0.1.0
 	num-traits@0.2.19
 	num_cpus@1.16.0
@@ -288,11 +289,11 @@ CRATES="
 	num_enum_derive@0.7.2
 	objc@0.2.7
 	objc-foundation@0.1.1
-	objc-sys@0.3.3
+	objc-sys@0.3.5
 	objc2@0.4.1
-	objc2@0.5.1
+	objc2@0.5.2
 	objc2-encode@3.0.0
-	objc2-encode@4.0.1
+	objc2-encode@4.0.3
 	objc_exception@0.1.2
 	objc_id@0.1.1
 	object@0.32.2
@@ -328,7 +329,6 @@ CRATES="
 	prost-derive@0.12.6
 	prost-types@0.12.6
 	qoi@0.4.1
-	quick-xml@0.30.0
 	quick-xml@0.31.0
 	quote@1.0.36
 	rand@0.8.5
@@ -402,10 +402,10 @@ CRATES="
 	strum_macros@0.26.2
 	svgtypes@0.15.1
 	syn@1.0.109
-	syn@2.0.65
+	syn@2.0.66
 	sync_wrapper@0.1.2
 	tar@0.4.40
-	tauri-winrt-notification@0.1.3
+	tauri-winrt-notification@0.2.1
 	temp-dir@0.1.13
 	tempfile@3.10.1
 	termcolor@1.4.1
@@ -495,10 +495,8 @@ CRATES="
 	winapi-util@0.1.8
 	winapi-wsapoll@0.1.2
 	winapi-x86_64-pc-windows-gnu@0.4.0
-	windows@0.51.1
 	windows@0.54.0
 	windows@0.56.0
-	windows-core@0.51.1
 	windows-core@0.52.0
 	windows-core@0.54.0
 	windows-core@0.56.0
@@ -511,6 +509,7 @@ CRATES="
 	windows-targets@0.42.2
 	windows-targets@0.48.5
 	windows-targets@0.52.5
+	windows-version@0.1.1
 	windows_aarch64_gnullvm@0.42.2
 	windows_aarch64_gnullvm@0.48.5
 	windows_aarch64_gnullvm@0.52.5
@@ -551,15 +550,15 @@ CRATES="
 	xkeysym@0.2.0
 	xml-rs@0.8.20
 	xmlwriter@0.1.0
-	zbus@4.2.1
-	zbus_macros@4.2.1
+	zbus@4.2.2
+	zbus_macros@4.2.2
 	zbus_names@3.0.0
 	zerocopy@0.7.34
 	zerocopy-derive@0.7.34
 	zune-inflate@0.2.54
-	zvariant@4.1.0
-	zvariant_derive@4.1.0
-	zvariant_utils@1.1.1
+	zvariant@4.1.1
+	zvariant_derive@4.1.1
+	zvariant_utils@2.0.0
 "
 
 declare -A GIT_CRATES=(
