@@ -11,7 +11,7 @@ Custom Gentoo ebuild repository
   - pfetch-rs
     - 2.9.1
   - spaceconf
-    - 0.3.3
+    - 0.4.0
 - dev-python
   - yaspin
     - 3.0.2
