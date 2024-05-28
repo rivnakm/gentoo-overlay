@@ -15,6 +15,9 @@ Custom Gentoo ebuild repository
 - dev-python
   - yaspin
     - 3.0.2
+- games-util
+  - ftb-app
+    - 1.25.10
 - gui-apps
   - hyprshade
     - 3.2.1-r1

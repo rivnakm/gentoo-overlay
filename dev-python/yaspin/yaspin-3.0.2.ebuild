@@ -13,6 +13,6 @@ SRC_URI="https://github.com/pavdmyt/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm ~arm64"
 
 distutils_enable_tests pytest
