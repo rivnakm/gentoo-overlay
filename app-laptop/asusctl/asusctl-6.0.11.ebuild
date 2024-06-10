@@ -8,7 +8,7 @@ EAPI=8
 CRATES="
 	ab_glyph@0.2.26
 	ab_glyph_rasterizer@0.1.8
-	addr2line@0.21.0
+	addr2line@0.22.0
 	adler@1.0.2
 	ahash@0.8.11
 	aho-corasick@1.1.3
@@ -21,21 +21,21 @@ CRATES="
 	arrayref@0.3.7
 	arrayvec@0.7.4
 	as-raw-xcb-connection@1.0.1
-	async-broadcast@0.7.0
+	async-broadcast@0.7.1
 	async-channel@1.9.0
 	async-channel@2.3.1
-	async-executor@1.11.0
+	async-executor@1.12.0
 	async-fs@1.6.0
 	async-fs@2.1.2
 	async-io@1.13.0
-	async-io@2.3.2
+	async-io@2.3.3
 	async-lock@2.8.0
-	async-lock@3.3.0
+	async-lock@3.4.0
 	async-net@1.8.0
 	async-process@1.8.1
-	async-process@2.2.2
+	async-process@2.2.3
 	async-recursion@1.1.1
-	async-signal@0.2.6
+	async-signal@0.2.8
 	async-stream@0.3.5
 	async-stream-impl@0.3.5
 	async-task@4.7.1
@@ -45,7 +45,7 @@ CRATES="
 	autocfg@1.3.0
 	axum@0.6.20
 	axum-core@0.3.4
-	backtrace@0.3.71
+	backtrace@0.3.72
 	base64@0.21.7
 	base64@0.22.1
 	betrayer@0.2.0
@@ -58,17 +58,17 @@ CRATES="
 	block-sys@0.2.1
 	block2@0.3.0
 	block2@0.4.0
-	blocking@1.6.0
+	blocking@1.6.1
 	bumpalo@3.16.0
 	by_address@1.2.1
 	bytemuck@1.16.0
-	bytemuck_derive@1.6.0
+	bytemuck_derive@1.7.0
 	byteorder@1.5.0
 	bytes@1.6.0
 	calloop@0.12.4
 	calloop-wayland-source@0.2.0
 	cargo-husky@1.5.0
-	cc@1.0.98
+	cc@1.0.99
 	cesu8@1.1.0
 	cexpr@0.6.0
 	cfg-if@1.0.0
@@ -76,7 +76,7 @@ CRATES="
 	cfg_aliases@0.2.1
 	cgl@0.3.2
 	chrono@0.4.38
-	clang-sys@1.7.0
+	clang-sys@1.8.1
 	clipboard-win@3.1.1
 	clru@0.6.2
 	cocoa@0.25.0
@@ -107,7 +107,7 @@ CRATES="
 	crunchy@0.2.2
 	crypto-common@0.1.6
 	css-color-parser2@1.0.1
-	ctor@0.2.8
+	ctor-lite@0.1.0
 	cursor-icon@1.1.0
 	data-url@0.3.1
 	deranged@0.3.11
@@ -128,17 +128,15 @@ CRATES="
 	dwrote@0.11.0
 	either@1.12.0
 	endi@1.1.0
-	enumflags2@0.7.9
-	enumflags2_derive@0.7.9
+	enumflags2@0.7.10
+	enumflags2_derive@0.7.10
 	env_logger@0.10.2
 	equivalent@1.0.1
 	errno@0.3.9
 	euclid@0.22.10
 	event-listener@2.5.3
 	event-listener@3.1.0
-	event-listener@4.0.3
-	event-listener@5.3.0
-	event-listener-strategy@0.4.0
+	event-listener@5.3.1
 	event-listener-strategy@0.5.2
 	exr@1.72.0
 	fastrand@1.9.0
@@ -176,7 +174,7 @@ CRATES="
 	gettext-sys@0.21.3
 	gif@0.12.0
 	gif@0.13.1
-	gimli@0.28.1
+	gimli@0.29.0
 	gl_generator@0.14.0
 	glam@0.22.0
 	glob@0.3.1
@@ -193,7 +191,7 @@ CRATES="
 	hashbrown@0.12.3
 	hashbrown@0.14.5
 	hdrhistogram@7.5.4
-	heck@0.4.1
+	heck@0.5.0
 	hermit-abi@0.3.9
 	hex@0.4.3
 	home@0.5.9
@@ -202,7 +200,7 @@ CRATES="
 	httparse@1.8.0
 	httpdate@1.0.3
 	humantime@2.1.0
-	hyper@0.14.28
+	hyper@0.14.29
 	hyper-timeout@0.4.1
 	iana-time-zone@0.1.60
 	iana-time-zone-haiku@0.1.2
@@ -296,13 +294,13 @@ CRATES="
 	objc2-encode@4.0.3
 	objc_exception@0.1.2
 	objc_id@0.1.1
-	object@0.32.2
+	object@0.35.0
 	once_cell@1.19.0
 	orbclient@0.3.47
 	ordered-stream@0.2.0
 	owned_ttf_parser@0.21.0
 	parking@2.2.0
-	parking_lot@0.12.2
+	parking_lot@0.12.3
 	parking_lot_core@0.9.10
 	paste@1.0.15
 	percent-encoding@2.3.1
@@ -312,19 +310,19 @@ CRATES="
 	pin-project-lite@0.2.14
 	pin-utils@0.1.0
 	pin-weak@1.1.0
-	piper@0.2.2
+	piper@0.2.3
 	pix@0.13.3
 	pkg-config@0.3.30
 	png@0.17.13
 	png_pong@0.8.2
 	polling@2.8.0
-	polling@3.7.0
+	polling@3.7.1
 	portable-atomic@1.6.0
 	powerfmt@0.2.0
 	ppv-lite86@0.2.17
 	prettyplease@0.2.20
 	proc-macro-crate@3.1.0
-	proc-macro2@1.0.83
+	proc-macro2@1.0.85
 	prost@0.12.6
 	prost-derive@0.12.6
 	prost-types@0.12.6
@@ -369,8 +367,8 @@ CRATES="
 	sdl2@0.36.0
 	sdl2-sys@0.36.0
 	semver@1.0.23
-	serde@1.0.202
-	serde_derive@1.0.202
+	serde@1.0.203
+	serde_derive@1.0.203
 	serde_json@1.0.117
 	serde_repr@0.1.19
 	serde_spanned@0.6.6
@@ -381,8 +379,8 @@ CRATES="
 	simd-adler32@0.3.7
 	simplecss@0.2.1
 	siphasher@1.0.1
-	skia-bindings@0.72.0
-	skia-safe@0.72.0
+	skia-bindings@0.75.0
+	skia-safe@0.75.0
 	slab@0.4.9
 	slotmap@1.0.7
 	smallvec@1.13.2
@@ -399,12 +397,12 @@ CRATES="
 	static_assertions@1.1.0
 	strict-num@0.1.1
 	strum@0.26.2
-	strum_macros@0.26.2
+	strum_macros@0.26.4
 	svgtypes@0.15.1
 	syn@1.0.109
 	syn@2.0.66
 	sync_wrapper@0.1.2
-	tar@0.4.40
+	tar@0.4.41
 	tauri-winrt-notification@0.2.1
 	temp-dir@0.1.13
 	tempfile@3.10.1
@@ -418,18 +416,18 @@ CRATES="
 	time-core@0.1.2
 	tiny-skia@0.11.4
 	tiny-skia-path@0.11.4
-	tiny-xlib@0.2.2
+	tiny-xlib@0.2.3
 	tinyvec@1.6.0
 	tinyvec_macros@0.1.1
-	tokio@1.37.0
+	tokio@1.38.0
 	tokio-io-timeout@1.2.0
-	tokio-macros@2.2.0
+	tokio-macros@2.3.0
 	tokio-stream@0.1.15
 	tokio-util@0.7.11
-	toml@0.8.13
+	toml@0.8.14
 	toml_datetime@0.6.6
 	toml_edit@0.21.1
-	toml_edit@0.22.13
+	toml_edit@0.22.14
 	tonic@0.10.2
 	tower@0.4.13
 	tower-layer@0.3.2
@@ -476,15 +474,15 @@ CRATES="
 	wasm-bindgen-macro@0.2.92
 	wasm-bindgen-macro-support@0.2.92
 	wasm-bindgen-shared@0.2.92
-	wayland-backend@0.3.3
-	wayland-client@0.31.2
+	wayland-backend@0.3.4
+	wayland-client@0.31.3
 	wayland-csd-frame@0.3.0
-	wayland-cursor@0.31.1
+	wayland-cursor@0.31.3
 	wayland-protocols@0.31.2
 	wayland-protocols-plasma@0.2.0
 	wayland-protocols-wlr@0.2.0
-	wayland-scanner@0.31.1
-	wayland-sys@0.31.1
+	wayland-scanner@0.31.2
+	wayland-sys@0.31.2
 	web-sys@0.3.69
 	web-time@0.2.4
 	web-time@1.1.0
@@ -495,14 +493,12 @@ CRATES="
 	winapi-util@0.1.8
 	winapi-wsapoll@0.1.2
 	winapi-x86_64-pc-windows-gnu@0.4.0
-	windows@0.54.0
 	windows@0.56.0
 	windows-core@0.52.0
-	windows-core@0.54.0
 	windows-core@0.56.0
 	windows-implement@0.56.0
 	windows-interface@0.56.0
-	windows-result@0.1.1
+	windows-result@0.1.2
 	windows-sys@0.45.0
 	windows-sys@0.48.0
 	windows-sys@0.52.0
@@ -534,7 +530,7 @@ CRATES="
 	windows_x86_64_msvc@0.52.5
 	winit@0.29.15
 	winnow@0.5.40
-	winnow@0.6.8
+	winnow@0.6.13
 	wio@0.2.2
 	x11-clipboard@0.9.2
 	x11-dl@2.21.0
@@ -544,10 +540,10 @@ CRATES="
 	x11rb-protocol@0.13.1
 	xattr@1.3.1
 	xcursor@0.3.5
-	xdg-home@1.1.0
+	xdg-home@1.2.0
 	xkbcommon@0.7.0
 	xkbcommon-dl@0.4.2
-	xkeysym@0.2.0
+	xkeysym@0.2.1
 	xml-rs@0.8.20
 	xmlwriter@0.1.0
 	zbus@4.2.2
@@ -562,9 +558,8 @@ CRATES="
 "
 
 declare -A GIT_CRATES=(
-	[notify-rust]="https://github.com/flukejones/notify-rust;54176413b81189a3e4edbdc20a0b4f7e2e35c063"
-	[slint]="https://github.com/slint-ui/slint;7b3e2fcf32d2937a8ed58bcc742e45dd4852bced;slint-%commit%/api/rs/slint"
-	[slint-build]="https://github.com/slint-ui/slint;7b3e2fcf32d2937a8ed58bcc742e45dd4852bced;slint-%commit%/api/rs/build"
+	[slint]="https://github.com/slint-ui/slint;318c80b4f24c1196cb25180d74484146147d1876;slint-%commit%/api/rs/slint"
+	[slint-build]="https://github.com/slint-ui/slint;318c80b4f24c1196cb25180d74484146147d1876;slint-%commit%/api/rs/build"
 	[supergfxctl]="https://gitlab.com/asus-linux/supergfxctl;bf7099c0a771a98f83da055e3c561b91e82b5c75"
 )
 
