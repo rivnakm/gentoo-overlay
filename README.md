@@ -12,9 +12,14 @@ Custom Gentoo ebuild repository
     - 2.9.1
   - spaceconf
     - 0.5.1
+- dev-lang
+  - zig
+    - 0.13.0
 - dev-python
   - yaspin
     - 3.0.2
+  - zonpy
+    - 0.1.1
 - games-util
   - ftb-app
     - 1.25.10
