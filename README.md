@@ -26,6 +26,9 @@ Custom Gentoo ebuild repository
 - gui-apps
   - hyprshade
     - 3.2.1-r1
+- gui-wm
+  - river
+    - 0.3.3
 - kde-plasma
   - catppuccin-konsole-theme
     - 9999
