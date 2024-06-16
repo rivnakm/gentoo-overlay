@@ -19,7 +19,7 @@ Custom Gentoo ebuild repository
   - yaspin
     - 3.0.2
   - zonpy
-    - 0.2.0
+    - 0.2.1
 - games-util
   - ftb-app
     - 1.25.10
