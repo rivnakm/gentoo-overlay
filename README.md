@@ -25,7 +25,9 @@ Custom Gentoo ebuild repository
     - 1.25.10
 - gui-apps
   - hyprshade
-    - 3.2.1-r1
+    - 3.2.1
+  - waylock
+    - 1.2.0
 - gui-wm
   - river
     - 0.3.3

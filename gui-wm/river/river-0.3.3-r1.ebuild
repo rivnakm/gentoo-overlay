@@ -17,6 +17,7 @@ SRC_URI="
 LICENSE="GPL-3.0-or-later"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
+IUSE="doc bash-completion -fish-completion zsh-completion xwayland"
 
 EZIG_MIN="0.13"
 EZIG_MAX_EXCLUSIVE="0.14"
@@ -26,15 +27,16 @@ DEPEND="
 	dev-libs/wayland
 	>=gui-libs/wlroots-0.17.2
 	media-libs/mesa
-	x11-base/xwayland
 	x11-libs/libxkbcommon
 	x11-libs/pixman
+	xwayland? ( x11-base/xwayland )
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
 	dev-lang/zig:${EZIG_MIN}
 	dev-libs/wayland-protocols
 	dev-python/zonpy
+	doc? ( app-text/scdoc )
 "
 
 # see https://github.com/ziglang/zig/issues/3382
@@ -127,7 +129,14 @@ src_compile() {
 	mkdir -p output
 	# River only has a single build/install target so we just install to a temporary directory
 	# and then move the files to the correct location in src_install
-	DESTDIR="output" ezig build --system ${WORKDIR}/deps/ install --prefix /usr -Doptimize=ReleaseSafe --verbose || die
+	DESTDIR="output" ezig build --system ${WORKDIR}/deps/ install --prefix /usr \
+		-Doptimize=ReleaseSafe \
+		-Dman-pages=$(usex doc true false) \
+		-Dxwayland=$(usex xwayland true false) \
+		-Dbash-completion=$(usex bash-completion true false) \
+		-Dfish-completion=$(usex fish-completion true false) \
+		-Dzsh-completion=$(usex zsh-completion true false) \
+		--verbose || die
 }
 
 
@@ -138,17 +147,25 @@ src_install() {
 	insinto /usr/share/wayland-sessions
 	doins contrib/river.desktop
 
-	insinto /usr/share/bash-completion/completions
-	doins output/usr/share/bash-completion/completions/riverctl
+	if use bash-completion; then
+		insinto /usr/share/bash-completion/completions
+		doins output/usr/share/bash-completion/completions/riverctl
+	fi
 
-	insinto /usr/share/fish/vendor_completions.d
-	doins output/usr/share/fish/vendor_completions.d/riverctl.fish
+	if use fish-completion; then
+		insinto /usr/share/fish/vendor_completions.d
+		doins output/usr/share/fish/vendor_completions.d/riverctl.fish
+	fi
 
-	insinto /usr/share/zsh/site-functions
-	doins output/usr/share/zsh/site-functions/_riverctl
+	if use zsh-completion; then
+		insinto /usr/share/zsh/site-functions
+		doins output/usr/share/zsh/site-functions/_riverctl
+	fi
 
-	insinto /usr/share/man/man1
-	doins output/usr/share/man/man1/river{,ctl,tile}.1
+	if use doc; then
+		insinto /usr/share/man/man1
+		doins output/usr/share/man/man1/river{,ctl,tile}.1
+	fi
 
 	dodoc README.md
 }
