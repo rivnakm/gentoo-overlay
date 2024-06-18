@@ -17,7 +17,7 @@ SRC_URI="
 LICENSE="GPL-3.0-or-later"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
-IUSE="doc bash-completion -fish-completion zsh-completion xwayland"
+IUSE="+doc +bash-completion -fish-completion +zsh-completion +xwayland"
 
 EZIG_MIN="0.13"
 EZIG_MAX_EXCLUSIVE="0.14"
