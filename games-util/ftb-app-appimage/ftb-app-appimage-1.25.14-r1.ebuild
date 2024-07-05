@@ -58,7 +58,7 @@ src_unpack() {
 }
 
 src_install() {
-	insinto /opt/ftb-app
+	exeinto /opt/ftb-app
 	doexe ftb-app.AppImage
 
 	FTB_SRC_DIR="${S}/FTB-App-${PV}"
