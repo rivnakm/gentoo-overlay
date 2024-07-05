@@ -7,14 +7,16 @@ MY_P=${MY_PN}-${PV}
 DESCRIPTION="The official Feed The Beast desktop app"
 HOME_PAGE="https://feed-the-beast.com/ftb-app"
 SRC_URI="
-	https://github.com/FTBTeam/FTB-App/archive/refs/tags/v${PV}.tar.gz -> ${MY_P}.tar.gz
-	amd64? ( https://piston.feed-the-beast.com/app/${MY_P}-x86_64.AppImage -> ${MY_P}.AppImage )
-	arm64? ( https://piston.feed-the-beast.com/app/${MY_P}-arm64.AppImage -> ${MY_P}.AppImage )
+	https://github.com/FTBTeam/FTB-App/archive/refs/tags/v${PV}.tar.gz -> ${MY_P}-src.tar.gz
+	amd64? ( https://piston.feed-the-beast.com/app/${MY_P}-x86_64.AppImage )
+	arm64? ( https://piston.feed-the-beast.com/app/${MY_P}-arm64.AppImage )
 "
 
 LICENSE="FTB"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
+
+RESTRICT="strip"
 
 DEPEND="
 	app-accessibility/at-spi2-core
@@ -52,9 +54,11 @@ BDEPEND=""
 
 S="${WORKDIR}"
 
+QA_PREBUILT="/opt/ftb-app/ftb-app.AppImage"
+
 src_unpack() {
 	default
-	cp "${DISTDIR}/${MY_P}.AppImage" "${S}/ftb-app.AppImage"
+	cp ${DISTDIR}/${MY_P}-*.AppImage "${S}/ftb-app.AppImage" || die
 }
 
 src_install() {
