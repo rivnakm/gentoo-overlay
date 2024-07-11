@@ -588,10 +588,7 @@ DEPEND="
 	x11-libs/libdrm
 	x11-libs/libxkbcommon
 "
-RDEPEND="
-	${DEPEND}
-	|| ( sys-kernel/rog-sources sys-kernel/zen_rog-sources )
-"
+RDEPEND="${DEPEND}"
 BDEPEND="
 	dev-build/cmake
 "
