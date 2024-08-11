@@ -20,6 +20,9 @@ Custom Gentoo ebuild repository
     - 3.0.2
   - zonpy
     - 0.2.1
+- dev-util
+  - jetbrains-toolbox
+    - 2.4.1.32573
 - games-util
   - ftb-app
     - 1.25.10
