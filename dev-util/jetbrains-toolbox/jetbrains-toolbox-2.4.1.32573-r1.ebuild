@@ -12,7 +12,7 @@ LICENSE="
 
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
-RESTRICT="bindist mirror splitdebug"
+RESTRICT="bindist mirror splitdebug strip"
 IUSE="
 	dbus
 	gtk
