@@ -4,6 +4,9 @@ Custom Gentoo ebuild repository
 
 ## Packages
 
+- app-editors
+  - neptune
+    - 9999
 - app-laptop
   - asusctl
     - 6.0.11
@@ -23,6 +26,7 @@ Custom Gentoo ebuild repository
 - dev-util
   - jetbrains-toolbox
     - 2.4.1.32573
+    - 2.4.2.32922
 - games-util
   - ftb-app
     - 1.25.10
