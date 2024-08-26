@@ -17,9 +17,10 @@ SRC_URI="
 SLOT=0
 KEYWORDS="~amd64 ~arm ~arm64"
 
-QA_PREBUILT="
-	usr/bin/tailwindcss
-"
+RESTRICT="strip"
+
+QA_PREBUILT="usr/bin/tailwindcss"
+QA_PRESTRIPPED="usr/bin/tailwindcss"
 
 S=${WORKDIR}
 
