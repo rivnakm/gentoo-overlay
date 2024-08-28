@@ -18,7 +18,7 @@ BDEPEND="
 	virtual/rust
 "
 
-S=${WORKDIR}/${P}/tooling/cli
+S=${WORKDIR}/${P}/packages/cli
 
 src_unpack() {
 	git-r3_src_unpack
