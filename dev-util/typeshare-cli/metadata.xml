@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>rivnakm1@gmail.com</email>
+		<name>Mike Rivnak</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">1Password/typeshare</remote-id>
+	</upstream>
+	<use>
+		<flag name="debug">Build in debug mode</flag>
+	</use>
+</pkgmetadata>
