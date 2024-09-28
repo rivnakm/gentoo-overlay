@@ -157,9 +157,9 @@ CRATES="
 inherit cargo
 
 DESCRIPTION="Simple configuration manager for dotfiles and system configuration files"
-HOMEPAGE="https://github.com/mrivnak/spaceconf"
+HOMEPAGE="https://github.com/rivnakm/spaceconf"
 SRC_URI="
-    https://github.com/mrivnak/spaceconf/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+    https://github.com/rivnakm/spaceconf/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
 
