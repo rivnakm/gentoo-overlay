@@ -157,22 +157,28 @@ CRATES="
 
 inherit cargo
 
-DESCRIPTION="spaceconf"
-# Double check the homepage as the cargo_metadata crate
-# does not provide this value so instead repository is used
-HOMEPAGE="homepage field in Cargo.toml inaccessible to cargo metadata"
-SRC_URI="${CARGO_CRATE_URIS}"
+DESCRIPTION="Simple configuration manager for dotfiles and system configuration files"
+HOMEPAGE="https://github.com/rivnakm/spaceconf"
+SRC_URI="
+    https://github.com/rivnakm/spaceconf/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+    ${CARGO_CRATE_URIS}
+"
 
 # License set may be more restrictive as OR is not respected
 # use cargo-license for a more accurate license picture
-LICENSE="Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD Boost-1.0 MIT MPL-2.0 Unicode-DFS-2016 Unlicense"
+LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm ~arm64"
 
 DEPEND=""
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND} app-admin/sudo"
 BDEPEND=""
 
 # rust does not use *FLAGS from make.conf, silence portage warning
 # update with proper path to binaries this crate installs, omit leading /
 QA_FLAGS_IGNORED="usr/bin/${PN}"
+
+src_prepare() {
+    default
+    sed -i "s/0.0.0/${PV}/" Cargo.toml || die
+}
