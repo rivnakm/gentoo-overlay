@@ -1,0 +1,11 @@
+--- a/cargo_home/gentoo/skia-bindings-0.75.0/build_support/platform.rs
++++ b/cargo_home/gentoo/skia-bindings-0.75.0/build_support/platform.rs
+@@ -135,7 +135,7 @@ impl GnArgsBuilder {
+ 
+         if let Some(target) = &self.target_str {
+             let target = format!("--target={target}");
+-            self.cflag(&target);
++            // self.cflag(&target);
+             asmflags.push(target);
+         }
+ 
