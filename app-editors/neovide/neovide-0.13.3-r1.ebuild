@@ -458,7 +458,10 @@ src_prepare() {
 src_install() {
 	cargo_src_install
 	domenu assets/neovide.desktop
-	newicon assets/neovide.svg neovide
+
+	for size in 16 32 48 256; do
+		newicon -s $size assets/neovide-${size}x${size}.png ${PN}.png
+	done
 }
 
 pkg_postinst() {
