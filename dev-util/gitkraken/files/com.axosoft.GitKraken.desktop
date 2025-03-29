@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=GitKraken Desktop
+GenericName=Unleash your repo
+Exec=/usr/bin/gitkraken
+Icon=gitkraken
+Type=Application
+StartupNotify=false
+StartupWMClass=gitkraken
+Categories=Utility;Development;
+

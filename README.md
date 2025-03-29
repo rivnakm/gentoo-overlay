@@ -26,6 +26,8 @@ Custom Gentoo ebuild repository
   - zonpy
     - 0.2.1
 - dev-util
+  - gitkraken
+    - 10.8.1
   - jetbrains-toolbox
     - 2.4.1.32573
     - 2.4.2.32922
