@@ -1,20 +1,22 @@
-# alpha-gentoo
+# gentoo-overlay
 
 Custom Gentoo ebuild repository
 
 ## Packages
 
 - app-editors
-  - neptune
-    - 9999
+  - neovide
+    - 0.13.3-r1
+  - visual-studio-code
+    - 1.93.1
 - app-laptop
   - asusctl
-    - 6.0.11
+    - 6.0.11-r1
 - app-misc
   - pfetch-rs
     - 2.9.1
   - spaceconf
-    - 0.5.1
+    - 0.8.0-r2
 - dev-lang
   - zig
     - 0.13.0
@@ -27,17 +29,27 @@ Custom Gentoo ebuild repository
   - jetbrains-toolbox
     - 2.4.1.32573
     - 2.4.2.32922
+  - tailwindcss-cli
+    - 3.4.10-r1
+  - tauri-cli
+    - 9999
+  - trunk
+    - 9999
+  - typeshare-cli
+    - 1.11.0
 - games-util
   - ftb-app
     - 1.25.10
+  - ftb-app-appimage
+    - 1.25.14-r2
 - gui-apps
   - hyprshade
-    - 3.2.1
+    - 3.2.1-r1
   - waylock
     - 1.2.0
 - gui-wm
   - river
-    - 0.3.3
+    - 0.3.3-r2
 - kde-plasma
   - catppuccin-konsole-theme
     - 9999
@@ -49,11 +61,6 @@ Custom Gentoo ebuild repository
 - media-gfx
   - hyprshot
     - 1.2.3
-- sys-kernel
-  - rog-sources
-    - 6.9.1
-  - zen_rog-sources
-    - 6.8.9
 - sys-power
   - power-profiles-daemon
     - 0.21
