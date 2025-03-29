@@ -29,6 +29,7 @@ Custom Gentoo ebuild repository
   - jetbrains-toolbox
     - 2.4.1.32573
     - 2.4.2.32922
+    - 2.5.4.38621
   - tailwindcss-cli
     - 3.4.10-r1
   - tauri-cli
